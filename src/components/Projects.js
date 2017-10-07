@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-const urlApp = "http://localhost:3000/"
+const urlApp = "https://gabrira.github.io/Portfolio/"
 
 export default class Projects extends Component {
     constructor(props) {
