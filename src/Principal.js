@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
+import {Route, Switch, Redirect, Link } from 'react-router-dom';
 import About from "./components/About";
 import Projects from "./components/Projects";
 
@@ -21,42 +21,59 @@ class Principal extends Component {
             </div>
 
             <div className="menu-redes menu-seccion">
-              <div className="red-1 red-social"></div>
-              <div className="red-2 red-social"></div>
-              <div className="red-3 red-social"></div>
+
+              <div className="contenedor-redes-sociales">
+                <a href="https://github.com/GabriRa" target="_blank" className="red-1 red-social">
+                  <div className="link">
+                      <i className="fa fa-github-square fa-3x" aria-hidden="true"></i>
+                  </div>
+                </a>
+                <a href="https://linkedin.com/in/gabrira" target="_blank" className="red-2 red-social">
+                  <div className="link">
+                    <i className="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+                  </div>
+                </a>
+                <a href="https://codepen.io/GabriRa" target="_blank" className="red-3 red-social">
+                  <div className="link">
+                    <i className="fa fa-codepen fa-3x" aria-hidden="true"></i>
+                  </div>
+                </a>
+                
+              </div>
+
             </div>
 
             <div className="menu-links menu-seccion">
 
               <div className="link-1 link-web">
-                <a href="/Portfolio/about" className="link-direccion">
+                <Link to="/Portfolio/about" className="link-direccion">
                   About
-                </a>
+                </Link>
               </div>
 
               <div className="link-2 link-web">
-                <a href="/Portfolio/projects" className="link-direccion">
+                <Link to="/Portfolio/projects" className="link-direccion">
                   Projects
-                </a>
+                </Link>
               </div>
 
               <div className="link-3 link-web">
-                <a href="" className="link-direccion">
-                  HOla
-                </a>
+                <Link to="" className="link-direccion">
+                  Blog
+                </Link>
               </div>
 
-              <div className="link-4 link-web">
+              {/*<div className="link-4 link-web">
                 <a href="" className="link-direccion">
                   adios
                 </a>
-              </div>
+              </div>*/}
             </div>
 
         </div>
 
         <div className="contenidos">
-          <BrowserRouter>
+          
             <Switch>
 
               <Route path="/Portfolio/about" component={About}/>
@@ -64,7 +81,7 @@ class Principal extends Component {
 
               <Redirect to="/Portfolio/about"/>
             </Switch>  
-          </BrowserRouter>
+
         </div>
 
       </div>

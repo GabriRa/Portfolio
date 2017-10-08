@@ -44,22 +44,23 @@ export default class About extends Component{
 
                         <div className="presentacion-habilidad apartado-categoria habilidad-1">
                             <h4>HTML5 &amp; CSS3</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ratione repellat laborum harum rerum dolores voluptate mollitia aliquam pariatur enim!</p>
+                            <p>My focus is being able to use all the new tools that brings CSS3 and HTML5, like CSS Grids, Flexbox, selectors, gradients, rgba, etc, and HTML5 local storage, videos, SEO etc...</p>
                         </div>
 
                         <div className="presentacion-habilidad apartado-categoria habilidad-2">
-                            <h4>HTML5 &amp; CSS3</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ratione repellat laborum harum rerum dolores voluptate mollitia aliquam pariatur enim!</p>
+                            <h4>ReactJS</h4>
+                            <p>It haves a very rich environment with a lot of opportunities to master. My main goal is doing incredible Web Apps, but I am really interested in Native, VR and anything with React</p>
                         </div>
 
                         <div className="presentacion-habilidad apartado-categoria habilidad-3">
-                            <h4>HTML5 &amp; CSS3</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ratione repellat laborum harum rerum dolores voluptate mollitia aliquam pariatur enim!</p>
+                            <h4>Node &amp; Express</h4>
+                            <p>I love Node, because it can be used anywhere. As I learn more about it, more I want to learn. I have experience  working with Express and MongoDB</p>
                         </div>
 
                         <div className="presentacion-aprender apartado-categoria habilidad-4">
-                            <h4>HTML5 &amp; CSS3</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ratione repellat laborum harum rerum dolores voluptate mollitia aliquam pariatur enim!</p>
+                            <h4>Other technologies</h4>
+                            <p>Confortable working with: Jquery, Bootstrap, Responsive Design, Webpack, GitHub</p>
+                            <p>Interested in learning: Angular2, Vue, Typescript, and anything about machine learning and data visualization</p>
                         </div>
 
 

@@ -44,7 +44,33 @@ export default class Projects extends Component {
                 {
                     nombre: "React",
                     listaProyectos: [
-                        {}
+                        {
+                            nombre: "Filnfo",
+                            descripcion: "Project done for fun and for showing my skills with React and Node. It's a `big project` where I have done everything to make it run. I have done this to prove myself that I can create a full Web Application from start to finish.",
+                            imagen: "filnfo.jpg",
+                            urlProyecto: "http://filnfo.herokuapp.com",
+                            resumen: "A web about films inspired by Netflix",
+                            tecnologiaPrincipal: "Node, React",
+                            tecnologiaSecundaria: "HTML5, CSS3, ES6 Javascript, Responsive, Heroku Apps"
+                        },
+                        {
+                            nombre: "Filnfo",
+                            descripcion: "Project done for fun and for showing my skills with React and Node. It's a `big project` where I have done everything to make it run. I have done this to prove myself that I can create a full Web Application from start to finish.",
+                            imagen: "filnfo.jpg",
+                            urlProyecto: "http://filnfo.herokuapp.com",
+                            resumen: "A web about films inspired by Netflix",
+                            tecnologiaPrincipal: "Node, React",
+                            tecnologiaSecundaria: "HTML5, CSS3, Javascript, Responsive, Heroku Apps"
+                        },
+                        {
+                            nombre: "Filnfo",
+                            descripcion: "Project done for fun and for showing my skills with React and Node. It's a `big project` where I have done everything to make it run. I have done this to prove myself that I can create a full Web Application from start to finish.",
+                            imagen: "filnfo.jpg",
+                            urlProyecto: "http://filnfo.herokuapp.com",
+                            resumen: "A web about films inspired by Netflix",
+                            tecnologiaPrincipal: "Node, React",
+                            tecnologiaSecundaria: "HTML5, CSS3, Javascript, Responsive, Heroku Apps"
+                        }
                     ]
                 },
                 {
@@ -132,7 +158,7 @@ export default class Projects extends Component {
 
                                                 <div className="info-resumen">
                                                     <p>{infoProyecto.descripcion}</p>
-                                                    <div className="boton-mas-info" onClick={e => this.mostarMasInfo(e, indice)}></div>
+                                                    <div className="boton-menos-info" onClick={e => this.mostarMasInfo(e, indice)}></div>
                                                 </div>
                                             </div>
                                 
