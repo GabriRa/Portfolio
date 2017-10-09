@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Route, Switch, Redirect, Link } from 'react-router-dom';
+import {Route, Switch, Redirect, NavLink } from 'react-router-dom';
 import About from "./components/About";
 import Projects from "./components/Projects";
 
@@ -46,21 +46,21 @@ class Principal extends Component {
             <div className="menu-links menu-seccion">
 
               <div className="link-1 link-web">
-                <Link to="/Portfolio/about" className="link-direccion">
+                <NavLink to="/Portfolio/about" className="link-direccion" activeClassName="link-web-activo">
                   About
-                </Link>
+                </NavLink>
               </div>
 
               <div className="link-2 link-web">
-                <Link to="/Portfolio/projects" className="link-direccion">
+                <NavLink to="/Portfolio/projects" className="link-direccion" activeClassName="link-web-activo">
                   Projects
-                </Link>
+                </NavLink>
               </div>
 
               <div className="link-3 link-web">
-                <Link to="" className="link-direccion">
+                <NavLink to="/Portfolio/blog" className="link-direccion" activeClassName="link-web-activo">
                   Blog
-                </Link>
+                </NavLink>
               </div>
 
               {/*<div className="link-4 link-web">

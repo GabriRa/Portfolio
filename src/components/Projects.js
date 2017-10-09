@@ -6,7 +6,7 @@ export default class Projects extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            categoriaProyectos: ["Latest", "React", "Node", "Others"],
+            categoriaProyectos: ["Latest", "React", "Node", "Others"], //No hace falta, se podria hacer map a proyectos.nombre
             proyectoActual: "Latest",
             proyectos: [
                 {
@@ -14,12 +14,12 @@ export default class Projects extends Component {
                     listaProyectos: [
                         {
                             nombre: "Filnfo",
-                            descripcion: "Project done for fun and for showing my skills with React and Node. It's a `big project` where I have done everything to make it run. I have done this to prove myself that I can create a full Web Application from start to finish.",
+                            descripcion: "Project done for fun and for showing my skills with React and Node. It's a `big project` where I have done everything to make it run just to prove myself that I can create a full Web Application from start to finish.",
                             imagen: "filnfo.jpg",
                             urlProyecto: "http://filnfo.herokuapp.com",
                             resumen: "A web about films inspired by Netflix",
-                            tecnologiaPrincipal: "Node, React",
-                            tecnologiaSecundaria: "HTML5, CSS3, ES6 Javascript, Responsive, Heroku Apps"
+                            tecnologiaPrincipal: "Node React",
+                            tecnologiaSecundaria: "Express, ES6 Javascript, Responsive, Heroku Apps"
                         },
                         {
                             nombre: "Filnfo",
@@ -148,17 +148,29 @@ export default class Projects extends Component {
                                             <div className={`contenedor-efecto-info contenedor-efecto-${indice}`}>
                                                 <div className="info-principal">
                                                     <h3>{infoProyecto.nombre}</h3>
-                                                    <p>{infoProyecto.resumen}</p>
-                                                    <p>{infoProyecto.tecnologiaPrincipal} <br />
+                                                    <p className="resumen">{infoProyecto.resumen}</p>
+                                                    <p className="tecnologias"> <span>{infoProyecto.tecnologiaPrincipal}</span> <br />
                                                         {infoProyecto.tecnologiaSecundaria}
                                                     </p>
 
-                                                    <div className="boton-mas-info" onClick={e => this.mostarMasInfo(e, indice)}></div>
+                                                    <div className="boton-mas-info boton-info" onClick={e => this.mostarMasInfo(e, indice)}>
+                                                        <div className="contenedor-flechas">
+                                                            <div className="flecha-boton-1 flecha-boton"></div>
+                                                            <div className="flecha-boton-2 flecha-boton"></div>
+                                                            <div className="flecha-boton-3 flecha-boton"></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
 
                                                 <div className="info-resumen">
                                                     <p>{infoProyecto.descripcion}</p>
-                                                    <div className="boton-menos-info" onClick={e => this.mostarMasInfo(e, indice)}></div>
+                                                    <div className="boton-menos-info boton-info" onClick={e => this.mostarMasInfo(e, indice)}>
+                                                        <div className="contenedor-flechas">
+                                                            <div className="flecha-boton-1 flecha-boton"></div>
+                                                            <div className="flecha-boton-2 flecha-boton"></div>
+                                                            <div className="flecha-boton-3 flecha-boton"></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                 

@@ -18,15 +18,15 @@ export default class About extends Component{
 
                         <div className="presentacion-descripcion apartado-categoria">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet reiciendis sit eligendi incidunt pariatur, esse. Maxime in facilis illo minus doloribus accusamus. Maxime, sit. Deserunt, sint quasi praesentium voluptas, distinctio assumenda, quos adipisci officia at 
+                                As soon as I started coding, I fell in love. After searching for a lot years a career I think I have finally found something I have a passion for. I see myself learning a new technology tomorrow or in 5 years just for fun. Its really amazing all the things you can create just by coding. And thats my goal. Create something really amazing.
                             </p>
                         </div>
 
                         <div className="presentacion-caracteristicas apartado-categoria">
-                            <p className="info-1 info-caracteristicas">Correo</p>
-                            <p className="info-2 info-caracteristicas">Birthday</p>
-                            <p className="info-3 info-caracteristicas">Lenguages</p>
-                            <p className="info-4 info-caracteristicas">Otro</p>
+                            <p className="info-1 info-caracteristicas"><span>Correo: </span>gabrirabellot@gmail.com</p>
+                            <p className="info-2 info-caracteristicas"><span>Birthday: </span>26 of June, 1997</p>
+                            <p className="info-3 info-caracteristicas"><span>Lenguages: </span>Spanish and English</p>
+                            <p className="info-4 info-caracteristicas"><span>City: </span>Madrid (Toledo), Spain</p>
                         </div>
 
                         <div className="presentacion-hobbies apartado-categoria">
@@ -54,13 +54,13 @@ export default class About extends Component{
 
                         <div className="presentacion-habilidad apartado-categoria habilidad-3">
                             <h4>Node &amp; Express</h4>
-                            <p>I love Node, because it can be used anywhere. As I learn more about it, more I want to learn. I have experience  working with Express and MongoDB</p>
+                            <p>I love Node, because it can be used anywhere. As I learn more about it, more I want to learn. I feel confortable working with Express and MongoDB</p>
                         </div>
 
                         <div className="presentacion-aprender apartado-categoria habilidad-4">
                             <h4>Other technologies</h4>
                             <p>Confortable working with: Jquery, Bootstrap, Responsive Design, Webpack, GitHub</p>
-                            <p>Interested in learning: Angular2, Vue, Typescript, and anything about machine learning and data visualization</p>
+                            <p>Interested to learn: Angular2, Vue, Typescript, Python and anything about machine learning and data visualization</p>
                         </div>
 
 
