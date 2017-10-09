@@ -425,7 +425,7 @@ html, body, #root{
 					display: flex;
 					align-items: center;
 					justify-content: center;
-					padding: 0 1rem;
+					padding: 2rem 1rem 1rem;
 					color: #ccc;
 					font-weight: 700;
 				}
@@ -446,4 +446,7 @@ html, body, #root{
 	width: 40px;
 	left: calc(50% - 20px);
 	opacity: 1;
+}
+.link-3>.link-direccion{
+	text-decoration:line-through;
 }

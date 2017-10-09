@@ -54,7 +54,7 @@ export default class About extends Component{
 
                         <div className="presentacion-habilidad apartado-categoria habilidad-3">
                             <h4>Node &amp; Express</h4>
-                            <p>I love Node, because it can be used anywhere. As I learn more about it, more I want to learn. I feel confortable working with Express and MongoDB</p>
+                            <p>I love Node, because it can be used anywhere. As I learn more about it, more I want to learn. I feel confortable working with Express and MongoDB(Mongoose)</p>
                         </div>
 
                         <div className="presentacion-aprender apartado-categoria habilidad-4">
