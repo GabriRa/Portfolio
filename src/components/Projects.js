@@ -178,6 +178,8 @@ export default class Projects extends Component {
                                     </div>
                                 )
                             })
+                        } else {
+                            return false;
                         }
                     })}
                 </div>

@@ -31,6 +31,7 @@ html, body, #root{
 		flex-flow: column nowrap;
 		background-color: #222;
 		color: #ccc;
+		z-index: 3;
 	}
 		.menu-seccion{
 			margin-bottom: 2rem;
@@ -171,11 +172,10 @@ html, body, #root{
 		height: 80%;
 		min-height: fit-content;
 		display: flex;
-		background-color: #222;
-		/*border: 3px solid rgba(100, 10, 10, 1);*/
 		color:#ccc;
 	}
 		.categoria-presentacion{
+			background-color: #222;
 			width: 50%;
 			height: 100%;
 			min-height: fit-content;
@@ -294,7 +294,7 @@ html, body, #root{
 			position: absolute;
 			bottom: 13px;
 			left: calc(50% - 5px);
-			z-index: 3;
+			z-index: 2;
 			transition: all .3s ease;
 			opacity: 0;
 		}
@@ -323,6 +323,7 @@ html, body, #root{
 		}
 			.seccion-proyecto{
 				width: 30%;
+				height: 100%;
 			}
 				.seccion-proyecto>.link-foto{
 					display: block;
@@ -402,13 +403,14 @@ html, body, #root{
 							bottom: -5px;
 						}
 							.flecha-boton{
-								width: 50%;
-								height: 50%;
+								width: 15px;
+								height: 15px;
 								margin: auto;
 								margin-bottom: -.3rem;
 								border-right: 3px solid black;
 								border-bottom: 3px solid black;
 								transition: all .3s ease;
+								z-index: 4;
 							}
 							.boton-mas-info .flecha-boton{
 								transform: rotate(45deg);
@@ -449,4 +451,125 @@ html, body, #root{
 }
 .link-3>.link-direccion{
 	text-decoration:line-through;
+}
+.boton-responsive{
+	color: red;
+	height: fit-content;
+	width: fit-content;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+
+/*Responsive Design*/
+@media only screen and (max-width: 1200px){
+	.contenidos{
+		left: 0;
+		width: 100%;
+	}
+	.menu-lateral{
+		left: -330px;
+		transition: all .5s ease;
+	}
+	.info-caracteristicas{
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 990px){
+	.presentacion-about{
+		flex-flow: column nowrap;
+	}
+	.categoria-presentacion{
+		width: 100%;
+    	margin-top: 2rem;
+		border: none;
+	}
+	.categoria-habilidades{
+		padding: 1rem;
+	}
+	.apartado-categoria{
+		margin: 1rem 0;
+	}
+	.presentacion-hobbies{
+		justify-content: space-around;
+	}
+}
+
+@media only screen and (max-width: 550px){
+	/*About*/
+	.presentacion-about{
+		margin-top: 4rem;
+	}
+	.nombre-about{
+		left: 0;
+	}
+	.info-caracteristicas{
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+	.presentacion-hobbies{
+		flex-flow: row wrap;
+		margin: auto;
+	}
+	.hobbie-seccion{
+		margin: 1rem;
+	}
+	/*Proyectos*/
+	.seleccionar-proyectos{
+		left: 0;
+	}
+	.categoria-proyectos{
+		width: 20%;
+		font-size: 100%;
+	}
+	.info-proyecto{
+		flex-flow: column nowrap;
+		height: 400px;
+		align-items: center;
+	}
+	.seccion-proyecto{
+		width: 90%;
+		height: 45%;	
+	}
+	.seccion-proyecto-1{
+		border: 3px solid rgba(100, 10, 10, 1)
+	}
+	.contenedor-efecto-info>*{
+		border-radius: 5px;
+	}
+	.info-principal>h3{
+		margin: 0;
+		height: auto;
+		font-size:100%;
+	}
+	.info-principal>.resumen{
+		margin: 0;
+		font-size:10pt;
+	}
+	.info-principal>.tecnologias{
+		margin-bottom:1rem;
+		font-size:100%;
+	}
+	.info-principal span{
+		font-size: 100%;
+	}
+	.info-resumen{
+		font-size: 85%;
+	}
+	.boton-mas-info>.contenedor-flechas{
+		top: 0;
+	}
+	.flecha-boton{
+		border-width: 2px;
+		width: 7px;
+		height: 7px;
+		margin-bottom: 0;
+	}
+}
+
+.menu-lateral-responsive{
+	left: 0;
 }
