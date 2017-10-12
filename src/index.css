@@ -188,6 +188,7 @@ html, body, #root{
 		}
 		.categoria-habilidades{
 			border-left: 3px solid rgba(100, 10, 10, 1);
+			padding: 1.3rem;
 		}
 		.categoria-personal{
 			border-right: 3px solid rgba(100, 10, 10, 1);
@@ -453,6 +454,7 @@ html, body, #root{
 	text-decoration:line-through;
 }
 .boton-responsive{
+	display: none;
 	color: red;
 	height: fit-content;
 	width: fit-content;
@@ -464,6 +466,9 @@ html, body, #root{
 
 /*Responsive Design*/
 @media only screen and (max-width: 1200px){
+	.boton-responsive{
+		display: block;
+	}
 	.contenidos{
 		left: 0;
 		width: 100%;
