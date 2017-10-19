@@ -1,12 +1,35 @@
 import React, {Component} from "react";
+import Typed from "typed.js"
 
 export default class About extends Component{
+  componentDidMount(){
+    const options = {
+        strings: [ " fast learner.", " Web Developer.", " Full Stack Developer."],
+        typeSpeed: 75,
+        backSpeed: 25,
+        onComplete: (self) => {
+            document.querySelector(".typed-cursor").classList.add("quitar-cursor");
+        }
+    };
+    this.typed = new Typed(this.el, options);
+  }
+
+  componentWillUnmount() {
+    this.typed.destroy();
+  }
+
     render(){
         return(
             <div className="contenido-about">
 
                 <div className="nombre-about">
-                    <h1>Gabriel Rabello</h1>
+                    <h1>
+                        <span> Gabriel, a </span>
+                        <span
+                            style={{ whiteSpace: 'pre' }}
+                            ref={(el) => { this.el = el; }}
+                        />
+                    </h1>
                 </div>
 
                 <div className="presentacion-about">
@@ -23,17 +46,17 @@ export default class About extends Component{
                         </div>
 
                         <div className="presentacion-caracteristicas apartado-categoria">
-                            <p className="info-1 info-caracteristicas"><span>Correo: </span>gabrirabellot@gmail.com</p>
+                            <p className="info-1 info-caracteristicas"><span>E-mail: </span>gabrirabellot@gmail.com</p>
                             <p className="info-2 info-caracteristicas"><span>Birthday: </span>26 of June, 1997</p>
                             <p className="info-3 info-caracteristicas"><span>Lenguages: </span>Spanish and English</p>
                             <p className="info-4 info-caracteristicas"><span>City: </span>Madrid (Toledo), Spain</p>
                         </div>
 
                         <div className="presentacion-hobbies apartado-categoria">
-                            <div className="hobbie-1 hobbie-seccion"></div>
-                            <div className="hobbie-2 hobbie-seccion"></div>
-                            <div className="hobbie-3 hobbie-seccion"></div>
-                            <div className="hobbie-4 hobbie-seccion"></div>
+                            <div className="hobbie-1 hobbie-seccion"><i className="fa fa-paw fa-3x" aria-hidden="true"></i></div>
+                            <div className="hobbie-2 hobbie-seccion"><i className="fa fa-gamepad fa-3x" aria-hidden="true"></i></div>
+                            <div className="hobbie-3 hobbie-seccion"><i className="fa fa-laptop fa-3x" aria-hidden="true"></i></div>
+                            <div className="hobbie-4 hobbie-seccion"><i className="fa fa-futbol-o fa-3x" aria-hidden="true"></i></div>
                         </div>
                     </div>
 
@@ -44,23 +67,23 @@ export default class About extends Component{
 
                         <div className="presentacion-habilidad apartado-categoria habilidad-1">
                             <h4>HTML5 &amp; CSS3</h4>
-                            <p>My focus is being able to use all the new tools that brings CSS3 and HTML5, like CSS Grids, Flexbox, selectors, gradients, rgba, etc, and HTML5 local storage, videos, SEO etc...</p>
+                            <p>My focus is to use all the new tools that brings CSS3 and HTML5, like CSS Grids, Flexbox, selectors, gradients, rgba, etc, and HTML5 local storage, videos, SEO etc...</p>
                         </div>
 
                         <div className="presentacion-habilidad apartado-categoria habilidad-2">
-                            <h4>ReactJS</h4>
-                            <p>It haves a very rich environment with a lot of opportunities to master. My main goal is doing incredible Web Apps, but I am really interested in Native, VR and anything with React</p>
+                            <h4>ReactJS &amp; D3.js</h4>
+                            <p>The philosophy of creating components that can be used more than once it's really powerful and something I will master.</p>
                         </div>
 
                         <div className="presentacion-habilidad apartado-categoria habilidad-3">
                             <h4>Node &amp; Express</h4>
-                            <p>I love Node, because it can be used anywhere. As I learn more about it, more I want to learn. I feel confortable working with Express and MongoDB(Mongoose)</p>
+                            <p>I love Node, because it can be used anywhere. The more I work with it, more I want to learn. Confortable working with MongoDB too.</p>
                         </div>
 
                         <div className="presentacion-aprender apartado-categoria habilidad-4">
                             <h4>Other technologies</h4>
                             <p>Confortable working with: Jquery, Bootstrap, Responsive Design, Webpack, GitHub</p>
-                            <p>Interested to learn: Angular2, Vue, Typescript, Python and anything about machine learning and data visualization</p>
+                            <p>Interested to learn: Angular4, Vue, Typescript, Python, React Native/VR.</p>
                         </div>
 
 

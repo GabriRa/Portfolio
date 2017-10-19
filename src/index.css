@@ -9,6 +9,16 @@ html, body, #root{
 	width: 100%;
 	font-family: 'Open Sans', sans-serif;
 }
+.typed-cursor{
+  opacity: 1;
+  animation: typedjsBlink 1s infinite;
+}
+/*.quitar-cursor{
+	opacity: 0;
+}*/
+@keyframes typedjsBlink{
+  50% { opacity: 0.0; }
+}
 
 /*  Pagina Principal  */
 .principal{
@@ -48,8 +58,7 @@ html, body, #root{
 				margin: 0 0 1rem;
 				border-bottom: 3px solid rgba(150, 10, 10, 1);
 				color: #ddd;
-				width: 75%;
-				padding-right: .5rem;
+				width: 90%;
 				letter-spacing: 2px;
 			}
 		.menu-redes{
@@ -234,9 +243,13 @@ html, body, #root{
 				.hobbie-seccion{
 					border-radius: 50%;
 					margin: 0 .5rem;
-					background-color: red;
+					background-color: #ccc;
+					color: rgba(100, 10, 10, 1);
 					width: 80px;
 					height: 80px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
 				}
 			/*.presentacion-habilidad{}*/
 			.categoria-habilidades h4{
