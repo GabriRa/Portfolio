@@ -89,7 +89,33 @@ export default class Projects extends Component {
                 {
                     nombre: "Others",
                     listaProyectos: [
-                        {}
+                        {
+                            nombre: "CssGrid Layout",
+                            descripcion: "A responsive CSS Grid layout.",
+                            imagen: "grid.jpg",
+                            urlProyecto: "https://codepen.io/GabriRa/full/MERWdN/",
+                            resumen: "Grid Responsive Layout.",
+                            tecnologiaPrincipal: "CSS3",
+                            tecnologiaSecundaria: ""
+                        },
+                        {
+                            nombre: "Heat Map",
+                            descripcion: "Graphic showing the global temperature variance in every month, represented with colors.",
+                            imagen: "filnfo.jpg",
+                            urlProyecto: "https://codepen.io/GabriRa/full/ZXVPeY/",
+                            resumen: "D3 graphic about temperature.",
+                            tecnologiaPrincipal: "D3",
+                            tecnologiaSecundaria: ""
+                        },
+                        {
+                            nombre: "Bar Chart",
+                            descripcion: "Bar chart with a box info that shows data about Gross domestic products represented with D3",
+                            imagen: "barChart.jpg",
+                            urlProyecto: "https://codepen.io/GabriRa/full/KXrPRL/",
+                            resumen: "Gross domestic product in D3",
+                            tecnologiaPrincipal: "D3",
+                            tecnologiaSecundaria: ""
+                        }
                     ]
                 },
             ]
