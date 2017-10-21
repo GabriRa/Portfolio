@@ -78,7 +78,7 @@ export default class Projects extends Component {
                         {
                             nombre: "Minimi-Url",
                             descripcion: "Node app to short urls. If its not registered, an id is given to the url. Once registered, using the id will redirect you to the page.",
-                            imagen: "filnfo.jpg",
+                            imagen: "nodejs-logo.png",
                             urlProyecto: "https://minimi-url.herokuapp.com/",
                             resumen: "Shortener url",
                             tecnologiaPrincipal: "Node, MongoDB",
@@ -101,7 +101,7 @@ export default class Projects extends Component {
                         {
                             nombre: "Heat Map",
                             descripcion: "Graphic showing the global temperature variance in every month, represented with colors.",
-                            imagen: "filnfo.jpg",
+                            imagen: "heatMap.jpg",
                             urlProyecto: "https://codepen.io/GabriRa/full/ZXVPeY/",
                             resumen: "D3 graphic about temperature.",
                             tecnologiaPrincipal: "D3",
