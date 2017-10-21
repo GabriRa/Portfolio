@@ -6,7 +6,6 @@ export default class Projects extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            categoriaProyectos: ["Latest", "React", "Node", "Others"], //No hace falta, se podria hacer map a proyectos.nombre
             proyectoActual: "Latest",
             proyectos: [
                 {
@@ -14,21 +13,21 @@ export default class Projects extends Component {
                     listaProyectos: [
                         {
                             nombre: "Filnfo",
-                            descripcion: "Project done for fun and for showing my skills with React and Node. It's a `big project` where I have done everything to make it run just to prove myself that I can create a full Web Application from start to finish.",
+                            descripcion: "Using TMDB API I created a web page where you can see the latest films, search for movies and a personal page for each movie.",
                             imagen: "filnfo.jpg",
                             urlProyecto: "http://filnfo.herokuapp.com",
-                            resumen: "A web about films inspired by Netflix",
+                            resumen: "A web about films inspired by Netflix.",
                             tecnologiaPrincipal: "Node React",
                             tecnologiaSecundaria: "Express, ES6 Javascript, Responsive, Heroku Apps"
                         },
                         {
-                            nombre: "Filnfo",
-                            descripcion: "Project done for fun and for showing my skills with React and Node. It's a `big project` where I have done everything to make it run. I have done this to prove myself that I can create a full Web Application from start to finish.",
-                            imagen: "filnfo.jpg",
-                            urlProyecto: "http://filnfo.herokuapp.com",
-                            resumen: "A web about films inspired by Netflix",
-                            tecnologiaPrincipal: "Node, React",
-                            tecnologiaSecundaria: "HTML5, CSS3, Javascript, Responsive, Heroku Apps"
+                            nombre: "Game of Life",
+                            descripcion: "A game done with React where each cell interacts with its  neighbours following 4 basic rules to calculate the next state.",
+                            imagen: "gameOfLife.jpg",
+                            urlProyecto: "https://codepen.io/GabriRa/full/YrOYJN/",
+                            resumen: "The Game Of Life done with React",
+                            tecnologiaPrincipal: "React",
+                            tecnologiaSecundaria: " "
                         },
                         {
                             nombre: "Filnfo",
@@ -54,13 +53,13 @@ export default class Projects extends Component {
                             tecnologiaSecundaria: "HTML5, CSS3, ES6 Javascript, Responsive, Heroku Apps"
                         },
                         {
-                            nombre: "Filnfo",
-                            descripcion: "Project done for fun and for showing my skills with React and Node. It's a `big project` where I have done everything to make it run. I have done this to prove myself that I can create a full Web Application from start to finish.",
-                            imagen: "filnfo.jpg",
-                            urlProyecto: "http://filnfo.herokuapp.com",
-                            resumen: "A web about films inspired by Netflix",
-                            tecnologiaPrincipal: "Node, React",
-                            tecnologiaSecundaria: "HTML5, CSS3, Javascript, Responsive, Heroku Apps"
+                            nombre: "Game of Life",
+                            descripcion: "A game done with React where each cell interacts with its  neighbours following 4 basic rules to calculate the next state.",
+                            imagen: "gameOfLife.jpg",
+                            urlProyecto: "https://codepen.io/GabriRa/full/YrOYJN/",
+                            resumen: "The Game Of Life done with React",
+                            tecnologiaPrincipal: "React",
+                            tecnologiaSecundaria: " "
                         },
                         {
                             nombre: "Filnfo",
@@ -76,7 +75,15 @@ export default class Projects extends Component {
                 {
                     nombre: "Node",
                     listaProyectos: [
-                        {}
+                        {
+                            nombre: "Minimi-Url",
+                            descripcion: "Node app to short urls. If its not registered, an id is given to the url. Once registered, using the id will redirect you to the page.",
+                            imagen: "filnfo.jpg",
+                            urlProyecto: "https://minimi-url.herokuapp.com/",
+                            resumen: "Shortener url",
+                            tecnologiaPrincipal: "Node, MongoDB",
+                            tecnologiaSecundaria: "Express"
+                        }
                     ]
                 },
                 {
@@ -115,11 +122,10 @@ export default class Projects extends Component {
                 <div className="seleccionar-proyectos">
 
                     {/*Por cada categoria de Proyecto, creamos un boton que muestra los proyectos de esa categoria al hacer click*/}
-                    {/*Hacer una variable de esto?*/}
-                    {this.state.categoriaProyectos.map((proyecto, indice) => {
+                    {this.state.proyectos.map((proyecto, indice) => {
                         return (
-                            <div className={`categoria-proyecto-${indice} categoria-proyectos`} onClick={e => this.mostrarProyecto(proyecto, e)}>
-                                {proyecto + indice}
+                            <div className={`categoria-proyecto-${indice} categoria-proyectos`} onClick={e => this.mostrarProyecto(proyecto.nombre, e)}>
+                                {proyecto.nombre}
                             </div>
                         )
                     })}
@@ -147,7 +153,9 @@ export default class Projects extends Component {
 
                                             <div className={`contenedor-efecto-info contenedor-efecto-${indice}`}>
                                                 <div className="info-principal">
-                                                    <h3>{infoProyecto.nombre}</h3>
+                                                    <h3><a href={infoProyecto.urlProyecto}>
+                                                        {infoProyecto.nombre}
+                                                    </a></h3>
                                                     <p className="resumen">{infoProyecto.resumen}</p>
                                                     <p className="tecnologias"> <span>{infoProyecto.tecnologiaPrincipal}</span> <br />
                                                         {infoProyecto.tecnologiaSecundaria}

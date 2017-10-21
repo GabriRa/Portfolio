@@ -21,9 +21,9 @@ class Principal extends Component {
       <div className="principal">
         
         <div className="boton-responsive" onClick={e => this.moverMenu(e)}>
-          <div class="hamburger hamburger--spin">
-            <div class="hamburger-box">
-              <div class="hamburger-inner"></div>
+          <div className="hamburger hamburger--spin">
+            <div className="hamburger-box">
+              <div className="hamburger-inner"></div>
             </div>
           </div>
         </div>
